@@ -1,20 +1,21 @@
-# This config will apply itself to all configs that subscribe to the 'server' role.
+#
 
 { config, pkgs, lib, ... }:
 {
   nixpkgs.config.allowUnfree = true;
 
-  imports = [ ];
+  imports = [
+    ./hardware.nix
+  ];
   
   # Setup Kalyx functionality.
   kalyx = {
-    branding.enable = true; # Enable the Kalyx branding.
+    # home-compatability.hyprland.enable = true;
   };
 
-  # Set a kernel! Comment this out to get the regular Linux LTS kernel.
-  boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_latest; 
-
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [
+    firefox
+  ];
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

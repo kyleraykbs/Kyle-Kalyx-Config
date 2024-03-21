@@ -1,0 +1,6 @@
+[submodule "kalyx"]
+	path = kalyx
+	url = https://github.com/Juiced-Devs/Kalyx
+[submodule "kyler"]
+	path = kyler
+	url = https://github.com/kyleraykbs/Kyler
