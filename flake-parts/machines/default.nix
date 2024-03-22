@@ -116,6 +116,7 @@ in
       modules = [
         machine.hardware
         machine.configuration
+        {networking.hostName = hostname;}
         {system.stateVersion = machine.stateVersion;}
       ] 
       ++ machine.nixosModules

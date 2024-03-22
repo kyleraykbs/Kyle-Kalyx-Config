@@ -11,9 +11,6 @@
     branding.enable = true; # Enable the Kalyx branding.
   };
 
-  # Set a kernel! Comment this out to get the regular Linux LTS kernel.
-  boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_latest; 
-
   environment.systemPackages = with pkgs; [ ];
 
   # Enable the OpenSSH daemon.

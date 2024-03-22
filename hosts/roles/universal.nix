@@ -51,9 +51,6 @@
     xkbVariant = "";
   };
 
-  # Set a kernel! Comment this out to get the regular Linux LTS kernel.
-  boot.kernelPackages = pkgs.linuxPackages_zen; 
-
   environment.systemPackages = with pkgs; [
     lazygit
   ];

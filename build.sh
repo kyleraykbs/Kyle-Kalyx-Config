@@ -7,4 +7,4 @@ git add -A
 cd ..
 nix flake lock --update-input kalyx
 nix flake lock --update-input kyler
-sudo nixos-rebuild $1 $2 --flake ./#comet
+sudo nixos-rebuild $2 $3 --flake ./#$1

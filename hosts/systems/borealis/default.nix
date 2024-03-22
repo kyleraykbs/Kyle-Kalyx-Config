@@ -1,23 +1,21 @@
-# This config will apply itself to all configs that subscribe to the 'pc' role.
+#
 
 { config, pkgs, lib, ... }:
 {
   nixpkgs.config.allowUnfree = true;
 
-  imports = [ ];
+  imports = [
+    ./hardware.nix
+  ];
   
   # Setup Kalyx functionality.
-  kalyx = { };
-
-  # Enable SDDM.
-  services.xserver.displayManager.sddm.enable = lib.mkDefault true;
-  services.xserver.displayManager.sddm.wayland.enable = lib.mkDefault true;
+  kalyx = {
+    # home-compatability.hyprland.enable = true;
+  };
 
   environment.systemPackages = with pkgs; [
     firefox
   ];
-  
-  # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
