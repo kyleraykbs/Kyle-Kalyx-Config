@@ -64,4 +64,10 @@ in
   };
   kyler.opacity = 90;
   kyler.autoEnable = true;
+
+  programs = {
+    obs-studio = {
+      enable = true;
+    };
+  };
 }

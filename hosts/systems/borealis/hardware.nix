@@ -22,6 +22,8 @@
     # Networking Options
     broadcom.enable = true;
 
+    bluetooth.enable = true;
+
     # Monitors
     monitors = [
       {
@@ -50,6 +52,22 @@
     defaultMonitor = {
       resolution = "preffered";
       position = "automatic";
+    };
+
+    virtualisation = {
+      acspatch = true;
+      cpuarch = "intel";
+      virtcpus = "6-23";
+      hostcpus = "0-23";
+      enable = true;
+    };
+
+    camera = {
+      enable = true;
+      virtualCam = {
+        enable = true;
+        camNumbers = [8 9];
+      };
     };
   };
 
