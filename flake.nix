@@ -58,6 +58,22 @@
               };
             };
           };
+          stardust = {
+            nixosModules = [ kalyx.nixosModules.default ];
+            homeManagerModules = [ kalyx.homeManagerModules.default inputs.kyler.homeManagerModules.default ];
+            configuration = ./hosts/systems/stardust/default.nix;
+            roles = [ ./hosts/roles/universal.nix ./hosts/roles/pc.nix ];
+            hardware = ./hosts/systems/stardust/hardware.nix;
+            stateVersion = "22.05";
+            users = {
+              kyle = {
+                groups = [ "networkmanager" "wheel" "dialout" ] ++ kalyx.universalGroups ++ kalyx.adminGroups;
+                noSudoPassword = true;
+                configuration = ./homes/kyle/stardust.nix;
+                roles = [ ./homes/kyle ./homes/roles/universal.nix ./homes/roles/pc.nix ];
+              };
+            };
+          };
           comet = {
             nixosModules = [ kalyx.nixosModules.default ];
             homeManagerModules = [ kalyx.homeManagerModules.default inputs.kyler.homeManagerModules.default ];
