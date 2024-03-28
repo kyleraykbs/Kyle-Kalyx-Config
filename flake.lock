@@ -80,10 +80,10 @@
         "flake-parts": "flake-parts_2"
       },
       "locked": {
-        "dirtyRev": "fcac1b9cfc85002a6a5760e3521c12596145f48e-dirty",
-        "dirtyShortRev": "fcac1b9-dirty",
-        "lastModified": 1711440164,
-        "narHash": "sha256-cuPIQ7Pj6sc2eIZtBrzYPqCFSIgOmAdu7L0XMuYnzak=",
+        "dirtyRev": "21721745851fa2d784e913bb8586b8ab68fe3df5-dirty",
+        "dirtyShortRev": "2172174-dirty",
+        "lastModified": 1711521201,
+        "narHash": "sha256-P6yReDuTng4jm4XVFCvETwh1sPFQQRrjGVXv23baP5o=",
         "type": "git",
         "url": "file:./kalyx?submodules=1"
       },
