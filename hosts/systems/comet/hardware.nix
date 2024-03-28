@@ -68,12 +68,13 @@
       unicast = true;
     };
 
-    # camera = {
-    #   enable = true;
-    #   virtualCam = {
-    #     enable = true;
-    #   };
-    # };
+    camera = {
+      enable = true;
+      virtualCam = {
+        enable = true;
+        camNumbers = [8 9];
+      };
+    };
   };
 
   # V Drop options of hardware-configuration.nix here V:
