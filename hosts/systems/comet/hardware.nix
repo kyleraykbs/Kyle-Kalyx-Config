@@ -4,7 +4,7 @@
 
 {
   imports = [ ];
-
+  
   kalyx = {
     # GPU Options
     intelgpu.enable = lib.mkDefault false;

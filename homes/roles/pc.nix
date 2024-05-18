@@ -8,6 +8,7 @@ in
   home.packages = with pkgs; [
     keepassxc
     firefox
+    helvum
   ];
 
   kalyx = {

@@ -3,10 +3,17 @@ let
   modKey = "ALT";
 in
 {
-  kalyx = { };
-
+  kalyx = { 
+    thunar.enable = true;
+    file-roller = {
+      enable = true;
+      default = true;  
+    };
+    imv.enable = true;
+  };
+  
   # Binds
-    kalyx.tofi.bind = "${modKey},r";
+  kalyx.tofi.bind = "${modKey},r";
 
   wayland.windowManager.hyprland.settings = {
     bind = [ # Kalyx doesn't provide a bindings setting as of current, so we use the default module.

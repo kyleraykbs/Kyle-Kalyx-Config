@@ -28,7 +28,6 @@ let
         configuration = mkOption {
           type = types.deferredModule;
         };
-        # TODO: move stateversion here and in the system submodule too.
       };
     };
   in 
@@ -91,6 +90,7 @@ in
       }
     ] ++ (lib.attrsets.mapAttrsToList (name: configuration: {
       users.users.${name} = {
+        useDefaultShell = lib.mkDefault true;
         isNormalUser = true;
         description = "${name}";
         extraGroups = configuration.groups;
@@ -118,6 +118,7 @@ in
         machine.configuration
         {networking.hostName = hostname;}
         {system.stateVersion = machine.stateVersion;}
+        ./overlays.nix
       ] 
       ++ machine.nixosModules
       ++ machine.roles

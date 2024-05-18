@@ -26,7 +26,10 @@
   boot.kernelParams = [
     "ehci_hcd.ignore_oc=1"
   ];
-
+  
+  # Remove XTERM
+  services.xserver.excludePackages = [ pkgs.xterm ];
+  
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -57,6 +60,14 @@
 
   programs.git.enable = true;
   security.rtkit.enable = true;
+
+  environment.pathsToLink = [ "/share/zsh" ]; # ZSH
+  users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
+
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+  ];
 
   # List services that you want to enable:
 

@@ -6,7 +6,7 @@ in
   kalyx = { };
 
   # Binds
-    kalyx.tofi.bind = "${modKey},r";
+  kalyx.tofi.bind = "${modKey},r";
 
   wayland.windowManager.hyprland.settings = {
     bind = [ # Kalyx doesn't provide a bindings setting as of current, so we use the default module.

@@ -17,6 +17,13 @@
     firefox
   ];
 
+  networking.wireguard = {
+    networks.asluni.autoConfig = {
+      peers = true;
+      interface = true;
+    };
+  };
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
