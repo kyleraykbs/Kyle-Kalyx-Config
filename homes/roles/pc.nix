@@ -9,6 +9,7 @@ in
     keepassxc
     firefox
     helvum
+    obsidian
   ];
 
   kalyx = {

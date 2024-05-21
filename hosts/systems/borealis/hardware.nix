@@ -57,7 +57,7 @@
     virtualisation = {
       acspatch = true;
       cpuarch = "intel";
-      virtcpus = "6-23";
+      virtcpus = "22-23";
       hostcpus = "0-23";
       enable = true;
     };

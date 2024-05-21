@@ -53,6 +53,8 @@
     layout = "us";
     xkbVariant = "";
   };
+  
+  nixpkgs.config.allowInsecurePredicate = pkg: lib.strings.hasPrefix "electron" (lib.getName pkg);
 
   environment.systemPackages = with pkgs; [
     lazygit
