@@ -37,8 +37,9 @@
     ];
 
     defaultMonitor = {
-      resolution = "preffered";
+      resolution = "1280x720";
       position = "automatic";
+      mirror = "eDP-1";
     };
 
     camera = {
