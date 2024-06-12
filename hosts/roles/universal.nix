@@ -48,10 +48,11 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # services.xserver.enable = true;
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb = {
+      variant = "";
+      layout = "us";
+    };
   };
   
   nixpkgs.config.allowInsecurePredicate = pkg: lib.strings.hasPrefix "electron" (lib.getName pkg);
@@ -66,6 +67,9 @@
   environment.pathsToLink = [ "/share/zsh" ]; # ZSH
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
+
+  programs.zsh.ohMyZsh.enable = true;
+  programs.zsh.ohMyZsh.plugins = [ "git" "z" ];
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })

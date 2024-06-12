@@ -10,8 +10,8 @@
   kalyx = { };
 
   # Enable SDDM.
-  services.xserver.displayManager.sddm.enable = lib.mkDefault true;
-  services.xserver.displayManager.sddm.wayland.enable = lib.mkDefault true;
+  services.displayManager.sddm.enable = lib.mkDefault true;
+  services.displayManager.sddm.wayland.enable = lib.mkDefault true;
 
   environment.systemPackages = with pkgs; [
     firefox

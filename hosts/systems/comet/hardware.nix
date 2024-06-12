@@ -9,7 +9,8 @@
     # GPU Options
     intelgpu.enable = lib.mkDefault false;
     amdgpu.enable = lib.mkDefault false;
-    nvidia.enable = true;
+    nvidia = { enable = true; proprietary = false;};
+    gpu.enable = true;
 
     # CPU Options
     intel.enable = lib.mkDefault false;
@@ -30,7 +31,7 @@
         resolution = "1920x1080";
         framerate = 60;
         position = "0x0";
-        adapter = "DP-1";
+        adapter = "DP-3";
         workspaces = [7 8 9];
         defaultWorkspace = 7;
         bitdepth = 10;
