@@ -38,34 +38,47 @@ in
         };
       };
     };
-    tofi = {
-      enable = true;
-    };
+
+    tofi.enable = true;
     vscode.enable = true;
     discord.enable = true;
     neofetch.enable = true;
   };
+  
+  kyler = {
+    colors = {
+      base00 = "1d2021"; # ----
+      base01 = "3c3836"; # ---
+      base02 = "504945"; # --
+      base03 = "665c54"; # -
+      base04 = "bdae93"; # +
+      base05 = "d5c4a1"; # ++
+      base06 = "ebdbb2"; # +++
+      base07 = "fbf1c7"; # ++++
+      base08 = "fb4934"; # red
+      base09 = "fe8019"; # orange
+      base0A = "fabd2f"; # yellow
+      base0B = "b8bb26"; # green
+      base0C = "8ec07c"; # aqua/cyan
+      base0D = "83a598"; # blue
+      base0E = "d3869b"; # purple
+      base0F = "d65d0e"; # brown
+    };
 
-  kyler.colors = {
-    base00 = "1d2021"; # ----
-    base01 = "3c3836"; # ---
-    base02 = "504945"; # --
-    base03 = "665c54"; # -
-    base04 = "bdae93"; # +
-    base05 = "d5c4a1"; # ++
-    base06 = "ebdbb2"; # +++
-    base07 = "fbf1c7"; # ++++
-    base08 = "fb4934"; # red
-    base09 = "fe8019"; # orange
-    base0A = "fabd2f"; # yellow
-    base0B = "b8bb26"; # green
-    base0C = "8ec07c"; # aqua/cyan
-    base0D = "83a598"; # blue
-    base0E = "d3869b"; # purple
-    base0F = "d65d0e"; # brown
+    applications = {
+      kitty.font.size = 14;
+    };
+
+    system = {
+      font = {
+        primaryName = "Comic Mono";
+        primaryPackage = pkgs.comic-mono;
+        size = 12;
+      };
+    };
+    opacity = 90;
+    autoEnable = true;
   };
-  kyler.opacity = 90;
-  kyler.autoEnable = true;
 
   programs = {
     obs-studio = {

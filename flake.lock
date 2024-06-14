@@ -95,10 +95,11 @@
         "flake-parts": "flake-parts_2"
       },
       "locked": {
-        "dirtyRev": "eb805748bc3794bbe34d826044fd325fc288b0ae-dirty",
-        "dirtyShortRev": "eb80574-dirty",
-        "lastModified": 1716073052,
+        "lastModified": 1718229671,
         "narHash": "sha256-NW67Ay1oVvtHD4+3QMyJCmm1APJU0jvjJXSFgkFgHFw=",
+        "ref": "refs/heads/main",
+        "rev": "909f4b61598b29a3765b33c770b53060e0385e5f",
+        "revCount": 53,
         "type": "git",
         "url": "file:./kalyx?submodules=1"
       },
@@ -112,10 +113,10 @@
         "flake-parts": "flake-parts_3"
       },
       "locked": {
-        "dirtyRev": "3c9a686ff6652c64707d87bc52e58f30ed79c35a-dirty",
-        "dirtyShortRev": "3c9a686-dirty",
-        "lastModified": 1716033656,
-        "narHash": "sha256-rOPymIweFzPjZELQCKP3wVoLLgUtaRwMe9QUc5qCRkc=",
+        "dirtyRev": "d36368b559405ca365ac239ff5792d31ea39b49b-dirty",
+        "dirtyShortRev": "d36368b-dirty",
+        "lastModified": 1718229724,
+        "narHash": "sha256-i0z7cGHnNbqTPyVJzFTkTnFikTCNbYTTNlC3Z6fV0QM=",
         "type": "git",
         "url": "file:./kyler?submodules=1"
       },
