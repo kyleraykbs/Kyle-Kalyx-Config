@@ -1,3 +1,8 @@
+# ARCHIVED
+Kalyx is fully discontinued, it wasn't a good abstraction upon nix, I should've built parameterized modules instead. I'll keep my system configuration up regardless, kinda a remnant of the past.
+
+
+
 
 <a name="readme-top"></a>
 
